@@ -1,6 +1,6 @@
 
 import './App.css'
-import { Eye, Users, Heart, ArrowRight, CheckCircle, Globe, Shield, Zap } from 'lucide-react';
+import { Users, Heart, ArrowRight, CheckCircle, Globe } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 
 function App() {
