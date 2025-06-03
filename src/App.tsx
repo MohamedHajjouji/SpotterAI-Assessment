@@ -1,7 +1,7 @@
 
 import './App.css'
 import { Users, Heart, ArrowRight, CheckCircle, Globe } from 'lucide-react';
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,26 +11,7 @@ function App() {
     setIsVisible(true);
   }, []);
 
-  const features = [
-    {
-      icon: Globe,
-      title: "Any browser, any device.",
-      subtitle: "Cross-platform compatibility",
-      description: "Works on iOS and Android, with exceptional accuracy."
-    },
-    {
-      icon: Users,
-      title: "Identify all anonymous visitors.",
-      subtitle: "Complete visitor intelligence",
-      description: "Get details on browsing habits even when VPN, incognito mode, or temporal cookies are used."
-    },
-    {
-      icon: Heart,
-      title: "Delight your trusted users.",
-      subtitle: "Enhanced user experience",
-      description: "Personalize user experience and reduce 3A and OTP requirements by identifying logged-out users."
-    }
-  ];
+  
 
   // Animated chart data points
   const chartPoints1 = [
