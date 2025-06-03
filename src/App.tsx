@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeFeature, setActiveFeature] = useState(0);
+  
 
   useEffect(() => {
     setIsVisible(true);
@@ -193,7 +193,7 @@ function App() {
           <div className={`space-y-4 transform min-h-full flex flex-col transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
             <div
               className={`group bg-white/60 backdrop-blur-sm rounded-xl p-4  transition-all duration-500 hover:shadow-xl hover:-translate-y-1 cursor-pointer shadow-md `}
-              onMouseEnter={() => setActiveFeature(0)}
+              
             >
               <div className="flex items-start space-x-3">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 bg-[#008080]">
@@ -217,7 +217,7 @@ function App() {
 
             <div
               className={`group bg-white/60 backdrop-blur-sm rounded-xl p-4  transition-all duration-500 hover:shadow-xl hover:-translate-y-1 cursor-pointer shadow-md`}
-              onMouseEnter={() => setActiveFeature(1)}
+              
             >
               <div className='w-full h-[150px]  lg:h-[183px] flex flex-col gap-2 overflow-hidden'>
 
@@ -252,7 +252,8 @@ function App() {
 
             <div
               className={`group bg-white/60 backdrop-blur-sm rounded-xl p-4  transition-all duration-500 hover:shadow-xl hover:-translate-y-1 cursor-pointer shadow-md`}
-              onMouseEnter={() => setActiveFeature(2)}
+              
+            
             >
               <div className="flex items-start space-x-3">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg flex items-center justify-center transition-all duration-300 bg-[#008080]">
