@@ -202,7 +202,7 @@ function App() {
             >
               <div className='w-full h-[150px]  lg:h-[183px] flex flex-col gap-2 overflow-hidden'>
 
-                {Array.from({ length: 100 }).map((_, rowIdx) => (
+                {Array.from({ length: 20 }).map((_, rowIdx) => (
                   <div key={rowIdx} id='line' className='w-full flex justify-between'>
                     {Array.from({ length: 40 }).map((_, colIdx) => (
                       <div key={colIdx} className="h-1 bg-gray-200 w-1 rounded-full mb-2"></div>
